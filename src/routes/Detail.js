@@ -33,7 +33,7 @@ function Detail(){
                 <img src={json.data.movie.large_cover_image}/>
                 <p>rating : {json.data.movie.rating}</p>
                 <p>year : {json.data.movie.year}</p>
-                <p>runtime : {json.data.movie.runtime}</p>
+                <p>runtime : {json.data.movie.runtime == 0 ? " - " : json.data.movie.runtime}</p>
                 <h5>description</h5>
                 <p>{json.data.movie.description_full}</p>
             </div>
