@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "../style/detail.css";
 
 function Detail(){
     const {id} = useParams();
@@ -25,7 +26,7 @@ function Detail(){
 
     
     return (
-        <div>
+        <div className="detail">
             <h1>{(json.data && json.data.movie) ? json.data.movie.title : "Loading..."}</h1>
             {(json.data && json.data.movie) ? 
             <div>

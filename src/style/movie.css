@@ -1,0 +1,19 @@
+.movie h2{
+    font-size: 30px;
+}
+
+.movie p {
+    font-size: 20px;
+}
+
+.movie ul{
+    font-size: 20px;
+}
+
+.movie hr {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 251, 0, 0.469));
+    height: 2px;
+    border: 0;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}

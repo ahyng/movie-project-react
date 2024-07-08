@@ -1,0 +1,22 @@
+body{
+    margin: 50px;
+}
+
+*{
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+
+.detail p{
+    font-size: 25px;
+}
+
+.detail h5{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.detail img{
+    float: left;
+    margin-right: 30px;
+}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import Movie from "../components/Movie"
+import Movie from "../components/Movie";
+import "../style/home.css";
 
 function Home(){
     const [loading, setLoading] = useState(true); //로딩중인지 아닌지 
@@ -18,17 +19,21 @@ function Home(){
   console.log(movies);
   
   return (
-    <div>
-      {loading ? <h1>Loading...</h1> : 
-      <div>{
-        movies.map((movie) => 
-          <Movie title={movie.title} 
-          id={movie.id} 
-          medium_cover_image={movie.medium_cover_image} 
-          summary={movie.summary} 
-          genres={movie.genres}
-          key={movie.id} />
-        )}
+    <div className="home">
+      <h1>Best Movies</h1>
+      {loading ? <h2>Loading...</h2> : 
+      <div>
+        <p id="guide">Click on the title to learn more.</p>
+        <div>{
+          movies.map((movie) => 
+            <Movie title={movie.title} 
+            id={movie.id} 
+            medium_cover_image={movie.medium_cover_image} 
+            summary={movie.summary} 
+            genres={movie.genres}
+            key={movie.id} />
+          )}
+        </div>
       </div>}
     </div>
   )
