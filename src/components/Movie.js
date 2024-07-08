@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import { PropTypes } from "prop-types";
 import "../style/movie.css";
+import React from 'react';
 
 function Movie({title, id, medium_cover_image, genres}) {
     return (
         <div className="movie">
             <h2>
-                <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>{title}</Link>
+                <Link className="title" to={`/movie/${id}`}>{title}</Link>
             </h2>
             <img src={medium_cover_image} />
             <ul>
                 {genres && genres.map((g) => <li key={g}>{g}</li>)}
             </ul>
-            <hr />
         </div>
     )
 }

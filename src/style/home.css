@@ -1,8 +1,23 @@
+html{
+    background-color: rgb(62, 62, 62);
+}
+
 .home h1 {
     font-size: 40px;
+    color: white;
+}
+
+.home h2{
+    color: white;
 }
 
 .home #guide {
     font-size: 25px;
     margin-bottom: 80px;
+    color: white;
+}
+
+.home .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

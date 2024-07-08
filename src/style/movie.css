@@ -1,5 +1,18 @@
+.movie {
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.67);
+    color: rgb(62, 62, 62);
+    box-shadow: 0 17px 20px -18px rgb(255, 249, 88);  
+    text-align: center;
+}
+
 .movie h2{
     font-size: 30px;
+}
+
+.title{
+    color: rgb(62, 62, 62);
 }
 
 .movie p {
@@ -8,12 +21,10 @@
 
 .movie ul{
     font-size: 20px;
+    display: flex;
 }
 
-.movie hr {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 251, 0, 0.469));
-    height: 2px;
-    border: 0;
-    margin-bottom: 80px;
-    margin-top: 80px;
+.movie li {
+    list-style-type: none;
+    margin-right: 10px;
 }
