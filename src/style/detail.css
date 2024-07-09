@@ -6,6 +6,11 @@ body{
     color: white;
 }
 
+.detail h1 {
+    text-shadow: 0px 0px 5px rgb(255, 221, 0);
+    font-size: 40px;
+}
+
 .detail p{
     font-size: 25px;
 }
